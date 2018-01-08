@@ -22,7 +22,7 @@ contract ModelMarketplace {
         LogNewBid(lot);
     }
     
-    function removeBid(address
+    function removeBid(address aClient, index anIndex) returns (bool
 
     
 }
