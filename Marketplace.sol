@@ -22,6 +22,7 @@ contract ModelMarketplace {
         LogNewBid(lot);
     }
     
+    /*add mapping functionality by address so you don't have to run through the whole list*/
     function removeBid(address aClient, index anIndex) returns (bool success) {
         for(unit i = 0; i < 100 /*ONLY ALLOWS 100 BIDS AT A TIME*/; i++) {
             address tempAddress = liveBids[i].client;
